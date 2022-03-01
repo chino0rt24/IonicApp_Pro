@@ -5,7 +5,7 @@
                 <ion-list id="inbox-list">
                     
                     <ion-list-header>Tlamachtilistli</ion-list-header>
-                    Aueyak se/Nivel uno
+                    Aueyak moneki/Nivel uno
                     <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages1; let i = index">
                         <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                             <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -16,7 +16,7 @@
                     
                 </ion-list>
                 <ion-list id="ist">
-                Nivel 2
+                    Aueyak tsala/Nivel medio
                     <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages2; let i = index">
                         <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                             <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -27,7 +27,7 @@
                     
                 </ion-list>
                 <ion-list id="in">
-                    Nivel 3
+                    Aueyak eye/Nivel 3
                     <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages3; let i = index">
                         <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
                             <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
@@ -45,4 +45,4 @@
         <i class="icon ion-home"></i> Home
       </button>
 </ion-app>
-  
+}
