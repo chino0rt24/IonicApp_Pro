@@ -3,39 +3,112 @@
         <ion-menu contentId="main-content" type="overlay">
             <ion-content>
                 <ion-list id="inbox-list">
-                    
                     <ion-list-header>Tlamachtilistli</ion-list-header>
-                    Aueyak moneki/Nivel uno
-                    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages1; let i = index">
-                        <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-                            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-                            <ion-label>{{ p.title }}</ion-label>
-                        </ion-item>
-                        
-                    </ion-menu-toggle>
-                    
+                    <ion-accordion-group>
+                        <ion-accordion value="colors" toggle-icon="chevron-down">
+                            <ion-item slot="header">
+                                <ion-label>Aueyak moneki/Nivel Básico</ion-label>
+                            </ion-item>
+                            <ion-list slot="content">
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Kali; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapoua; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapali; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Pakayelistli; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                            </ion-list>
+                        </ion-accordion>
+                    </ion-accordion-group>
                 </ion-list>
+                <br>
                 <ion-list id="ist">
-                    Aueyak tsala/Nivel medio
-                    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages2; let i = index">
-                        <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-                            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-                            <ion-label>{{ p.title }}</ion-label>
-                        </ion-item>
-                        
-                    </ion-menu-toggle>
-                    
+                    <ion-accordion-group>
+                        <ion-accordion value="colors" toggle-icon="chevron-down">
+                            <ion-item slot="header">
+                                <ion-label>Aueyak tsala/Nivel Medio</ion-label>
+                            </ion-item>
+                            <ion-list slot="content">
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Kali2; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapoua2; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapali2; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of salud2; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                            </ion-list>
+                        </ion-accordion>
+                    </ion-accordion-group>
                 </ion-list>
+                <br>
                 <ion-list id="in">
-                    Aueyak eye/Nivel 3
-                    <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages3; let i = index">
-                        <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-                            <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
-                            <ion-label>{{ p.title }}</ion-label>
-                        </ion-item>
-                        
-                    </ion-menu-toggle>
-                    
+                    <ion-accordion-group>
+                        <ion-accordion value="colors" toggle-icon="chevron-down">
+                            <ion-item slot="header">
+                                <ion-label>Aueyak ouitl/Nivel Avanzado</ion-label>
+                            </ion-item>
+                            <ion-list slot="content">
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Kali3; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapoua3; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of Tlapali3; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                                <ion-menu-toggle auto-hide="false" *ngFor="let p of salud3; let i = index">
+                                    <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+                                        <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
+                                        <ion-label>{{ p.title }}</ion-label>
+                                    </ion-item>
+                                </ion-menu-toggle>
+                            </ion-list>
+                        </ion-accordion>
+                    </ion-accordion-group>
                 </ion-list>
             </ion-content>
         </ion-menu>
