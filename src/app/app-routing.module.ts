@@ -69,6 +69,7 @@ const routes: Routes = [
     loadChildren: () => import('./salud/salud.module').then( m => m.SaludPageModule)
   }
 
+
   
 ];
 
