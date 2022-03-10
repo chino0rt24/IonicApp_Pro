@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 public Kali =[
-  { title: 'Kali', url: '/home', icon: 'hand-left' },
+  { title: 'Tetlapaloa', url: '/home', icon: 'hand-left' },
 ];
 public Tlapoua =[
   { title: 'Tlapoua', url: '/numeros', icon: 'calculator' },
