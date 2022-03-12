@@ -3,13 +3,23 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
-        <ion-title>salud3</ion-title>
+        <ion-title>Pakayelistli aueyak ouitl</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-list >
+    <ion-grid>
+	<ion-row>
+            <ion-col col-2 *ngFor="let item of palabra">
+		<ion-input type="text" value="{{item}}">{{item}}</ion-input>
+	    </ion-col>
+	</ion-row>
+    </ion-grid>
+</ion-list>
 </ion-content>
+
+
 <ion-toolbar>
     <ion-button slot="start" href="/customers3">
         <ion-icon slot="start" name="caret-back-outline">

@@ -18,7 +18,7 @@ public Pakayelistli =[
   { title: 'Pakayelistli', url: '/salud',icon:'heart-half'},
 ];
 public Kali2 =[
-  { title: 'Kali', url: '/home2', icon: 'hand-left' },
+  { title: 'Tetlapaloa', url: '/home2', icon: 'hand-left' },
 ];
 public Tlapoua2 =[
   { title: 'Tlapoua', url: '/numeros2', icon: 'calculator' },
@@ -27,10 +27,10 @@ public Tlapali2 =[
   { title: 'Tlapali', url: '/customers2', icon: 'color-palette' },
 ];
 public salud2 =[
-  { title: 'salud', url: '/salud2',icon:'heart-half'},
+  { title: 'Pakayelistli', url: '/salud2',icon:'heart-half'},
 ];
 public Kali3 =[
-  { title: 'Kali', url: '/home3', icon: 'hand-left' },
+  { title: 'Tetlapaloa', url: '/home3', icon: 'hand-left' },
 ];
 public Tlapoua3 =[
   { title: 'Tlapoua', url: '/numeros3', icon: 'calculator' },
@@ -39,6 +39,6 @@ public Tlapali3 =[
   { title: 'Tlapali', url: '/customers3', icon: 'color-palette' },
 ];
 public salud3 =[
-  { title: 'salud', url: '/salud3',icon:'heart-half'},
+  { title: 'Pakayelistli', url: '/salud3',icon:'heart-half'},
 ];
 }

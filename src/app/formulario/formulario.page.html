@@ -5,15 +5,25 @@
 </ion-header>
 
 <ion-content>
-  <ion-toolbar>
-    <ion-button slot="start" href="/home2">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/customers2">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>
+  <div class="input-group mb-3">
+    <label class="input-group-text" for="inputGroupSelect01">Options</label>
+    <select class="form-select" id="inputGroupSelect01">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  
 
 </ion-content>
+<ion-toolbar>
+  <ion-button slot="start" href="/home2">
+      <ion-icon slot="start" name="caret-back-outline">
+      </ion-icon>
+  </ion-button>
+  <ion-button slot="end" href="/customers2">
+      <ion-icon slot="start" name="caret-forward-outline">
+      </ion-icon>
+  </ion-button>
+</ion-toolbar>
