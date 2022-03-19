@@ -8,73 +8,73 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-radio-group value="biff">
-      <ion-list-header>
-        <ion-label>Tlein neskayotia tamoxtla </ion-label>
-      </ion-list-header>
-  
-      <ion-item>
-        <ion-label>Hasta Mañana</ion-label>
-        <ion-radio slot="start" value="biff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>Mañana</ion-label>
-        <ion-radio slot="start" value="griff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>HOY</ion-label>
-        <ion-radio slot="start" value="buford"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
-  <ion-list>
-    <ion-radio-group value="biff">
-      <ion-list-header>
-        <ion-label>Tlein neskayotia kenin motoka </ion-label>
-      </ion-list-header>
-  
-      <ion-item>
-        <ion-label>¿Estas?</ion-label>
-        <ion-radio slot="start" value="biff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>¿Cómo estas?</ion-label>
-        <ion-radio slot="start" value="griff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>HOY</ion-label>
-        <ion-radio slot="start" value="buford"></ion-radio>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
-  <ion-list>
-    <ion-radio-group value="biff">
-      <ion-list-header>
-        <ion-label>Tlein neskayotia kenin motoka </ion-label>
-      </ion-list-header>
-  
-      <ion-item>
-        <ion-label>¿Estas?</ion-label>
-        <ion-radio slot="start" value="biff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>¿Cómo estas?</ion-label>
-        <ion-radio slot="start" value="griff"></ion-radio>
-      </ion-item>
-  
-      <ion-item>
-        <ion-label>HOY</ion-label>
-        <ion-radio slot="start" value="buford"></ion-radio>
-      </ion-item>
-      <ion-button  color="success" shape="round" fill="outline">Verificar</ion-button>
-    </ion-radio-group>
-  </ion-list>
+    <ion-list>
+        <ion-radio-group value="biff" [(ngModel)]="value_selected">
+            <ion-list-header>
+                <ion-label>Tlein neskayotia tamoxtla </ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>Hasta Mañana</ion-label>
+                <ion-radio slot="start" value="biff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>Mañana</ion-label>
+                <ion-radio slot="start" value="griff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>HOY</ion-label>
+                <ion-radio slot="start" value="buford"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
+    <ion-list>
+        <ion-radio-group value="biff">
+            <ion-list-header>
+                <ion-label>Tlein neskayotia kenin motoka </ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>¿Estas?</ion-label>
+                <ion-radio slot="start" value="biff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>¿Cómo estas?</ion-label>
+                <ion-radio slot="start" value="griff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>HOY</ion-label>
+                <ion-radio slot="start" value="buford"></ion-radio>
+            </ion-item>
+        </ion-radio-group>
+    </ion-list>
+    <ion-list>
+        <ion-radio-group value="biff">
+            <ion-list-header>
+                <ion-label>Tlein neskayotia kenin motoka </ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label>¿Estas?</ion-label>
+                <ion-radio slot="start" value="biff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>¿Cómo estas?</ion-label>
+                <ion-radio slot="start" value="griff"></ion-radio>
+            </ion-item>
+
+            <ion-item>
+                <ion-label>HOY</ion-label>
+                <ion-radio slot="start" value="buford"></ion-radio>
+            </ion-item>
+            <ion-button color="success" shape="round" fill="outline" (click)="verificar()">Verificar</ion-button>
+        </ion-radio-group>
+    </ion-list>
 </ion-content>
 <ion-toolbar>
     <ion-button slot="start" href="/folder/folder.module">

@@ -8,105 +8,105 @@
 </ion-header>
 
 <ion-content>
-  <ion-text color="dark">
-  <h2>Coloca en orden las decenas.</h2>
-  <h6>Recuerda que una decena es igual a diez y van de diez en diez.</h6>
-</ion-text>
+    <ion-text color="dark">
+        <h2>Coloca en orden las decenas.</h2>
+        <h6>Recuerda que una decena es igual a diez y van de diez en diez.</h6>
+    </ion-text>
     <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
-<ion-reorder-group disabled="false">
-  
-  <!-- Items wrapped in a reorder, entire item can be dragged -->
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        10
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
+    <ion-reorder-group disabled="false">
 
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        20
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        30
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
+        <!-- Items wrapped in a reorder, entire item can be dragged -->
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    10
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
 
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        40
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        50
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    20
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    30
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
 
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        60
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        70
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    40
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    50
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
 
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        80
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        90
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    60
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    70
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
 
-  <ion-reorder>
-    <ion-item>
-      <ion-label>
-        100
-      </ion-label>
-    </ion-item>
-  </ion-reorder>
-  
-</ion-reorder-group>
-      
-<ion-list>
-  <ion-item>
-    <ion-range color="danger" [pin]="true"></ion-range>
-  </ion-item>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    80
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    90
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
 
-  <ion-button  color="success" shape="round" fill="outline">Verificar</ion-button>
-<ion-toolbar>
-    <ion-button slot="start" href="/home2">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/customers2">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>
+        <ion-reorder>
+            <ion-item>
+                <ion-label>
+                    100
+                </ion-label>
+            </ion-item>
+        </ion-reorder>
+
+    </ion-reorder-group>
+
+    <ion-list>
+        <ion-item>
+            <ion-range step="10" color="danger" [pin]="true"></ion-range>
+        </ion-item>
+
+        <ion-button color="success" shape="round" fill="outline">Verificar</ion-button>
+        <ion-toolbar>
+            <ion-button slot="start" href="/home2">
+                <ion-icon slot="start" name="caret-back-outline">
+                </ion-icon>
+            </ion-button>
+            <ion-button slot="end" href="/customers2">
+                <ion-icon slot="start" name="caret-forward-outline">
+                </ion-icon>
+            </ion-button>
+        </ion-toolbar>

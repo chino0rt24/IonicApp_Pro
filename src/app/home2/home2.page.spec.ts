@@ -3,6 +3,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { Home2Page } from './home2.page';
 
+
 describe('Home2Page', () => {
   let component: Home2Page;
   let fixture: ComponentFixture<Home2Page>;
@@ -21,4 +22,5 @@ describe('Home2Page', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
 });
