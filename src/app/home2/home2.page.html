@@ -9,7 +9,7 @@
 
 <ion-content>
     <ion-list>
-        <ion-radio-group value="biff" [(ngModel)]="value_selected">
+        <ion-radio-group [(ngModel)]="value_selected">
             <ion-list-header>
                 <ion-label>Tlein neskayotia tamoxtla </ion-label>
             </ion-list-header>
@@ -28,10 +28,11 @@
                 <ion-label>HOY</ion-label>
                 <ion-radio slot="start" value="buford"></ion-radio>
             </ion-item>
+
         </ion-radio-group>
     </ion-list>
     <ion-list>
-        <ion-radio-group value="biff">
+        <ion-radio-group [(ngModel)]="value_selected1">
             <ion-list-header>
                 <ion-label>Tlein neskayotia kenin motoka </ion-label>
             </ion-list-header>
@@ -47,15 +48,15 @@
             </ion-item>
 
             <ion-item>
-                <ion-label>HOY</ion-label>
+                <ion-label>Mi nombre</ion-label>
                 <ion-radio slot="start" value="buford"></ion-radio>
             </ion-item>
         </ion-radio-group>
     </ion-list>
     <ion-list>
-        <ion-radio-group value="biff">
+        <ion-radio-group [(ngModel)]="value_selected2">
             <ion-list-header>
-                <ion-label>Tlein neskayotia kenin motoka </ion-label>
+                <ion-label>Tlein neskayotia kenin otimopanolti </ion-label>
             </ion-list-header>
 
             <ion-item>

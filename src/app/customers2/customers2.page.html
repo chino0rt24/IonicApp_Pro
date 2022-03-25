@@ -8,72 +8,58 @@
 </ion-header>
 
 <ion-content>
-  <ion-item>
-    <ion-label position="fixed">Azul</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="fixed">Verde</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-  <ion-item>
-    <ion-label position="fixed">Amarillo</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-      
+    <br>
+    <ion-label class="user_Name">1.-¿kenin anoso Chichiltic kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value"></ion-input>
+    </ion-item>
+    <br>
 
-<ion-item>
-  <ion-label position="fixed">Negro</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">ROJO</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">Negro</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">ROJO</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">Negro</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">ROJO</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">ROJO</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">Negro</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="fixed">ROJO</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-button  color="success" shape="round" fill="outline">Verificar</ion-button>
+    <ion-label class="user_Name">2.-¿kenin anoso Xoxoctic kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value1"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-label class="user_Name">3.-¿kenin anoso Azultic kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value2"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-label class="user_Name">4.-¿kenin anoso Chipahuac kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value3"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-label class="user_Name">5.-¿kenin anoso Yayahuic kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value4"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-label class="user_Name">6.-¿kenin anoso Achilcoz kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value5"></ion-input>
+    </ion-item>
+    <br>
+
+    <ion-label class="user_Name">7.-¿kenin anoso Tenextic kaxtilkopa?</ion-label>
+    <ion-item>
+        <ion-input [(ngModel)]="value6"></ion-input>
+    </ion-item>
+    <br>
+    <ion-button color="success" shape="round" fill="outline" (click)="verificar()">Verificar</ion-button>
 
 
-
-
-
-
-
-
-<ion-toolbar>
-    <ion-button slot="start" href="/numeros2">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/salud2">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>
+    <ion-toolbar>
+        <ion-button slot="start" href="/numeros2">
+            <ion-icon slot="start" name="caret-back-outline">
+            </ion-icon>
+        </ion-button>
+        <ion-button slot="end" href="/salud2">
+            <ion-icon slot="start" name="caret-forward-outline">
+            </ion-icon>
+        </ion-button>
+    </ion-toolbar>

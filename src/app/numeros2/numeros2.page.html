@@ -9,11 +9,11 @@
 
 <ion-content>
     <ion-text color="dark">
-        <h2>Coloca en orden las decenas.</h2>
-        <h6>Recuerda que una decena es igual a diez y van de diez en diez.</h6>
+        <h2 style="text-align: center">tlatlalia tlasempoualistli den matlaktli.</h2>
+        <h6 style="text-align: center">ilnamikilistli tleinka matlaktli ipan matlaktli</h6>
     </ion-text>
     <!-- The reorder gesture is disabled by default, enable it to drag and drop items -->
-    <ion-reorder-group disabled="false">
+    <ion-reorder-group disabled=" false ">
 
         <!-- Items wrapped in a reorder, entire item can be dragged -->
         <ion-reorder>
@@ -91,22 +91,21 @@
                 </ion-label>
             </ion-item>
         </ion-reorder>
-
     </ion-reorder-group>
-
     <ion-list>
         <ion-item>
-            <ion-range step="10" color="danger" [pin]="true"></ion-range>
+            <ion-range step="10 " color="danger " [pin]="true "></ion-range>
         </ion-item>
+    </ion-list>
+</ion-content>
+<ion-toolbar>
+    <ion-button slot="start" href="/home2">
+        <ion-icon slot="start" name="caret-back-outline">
+        </ion-icon>
+    </ion-button>
 
-        <ion-button color="success" shape="round" fill="outline">Verificar</ion-button>
-        <ion-toolbar>
-            <ion-button slot="start" href="/home2">
-                <ion-icon slot="start" name="caret-back-outline">
-                </ion-icon>
-            </ion-button>
-            <ion-button slot="end" href="/customers2">
-                <ion-icon slot="start" name="caret-forward-outline">
-                </ion-icon>
-            </ion-button>
-        </ion-toolbar>
+    <ion-button slot="end" href="/customers2">
+        <ion-icon slot="start" name="caret-forward-outline">
+        </ion-icon>
+    </ion-button>
+</ion-toolbar>

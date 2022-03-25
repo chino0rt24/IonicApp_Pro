@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { IonRadio } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
+
 
 
 @Component({
@@ -10,21 +11,43 @@ import { IonRadio } from '@ionic/angular';
 
 export class Home2Page implements OnInit {
 
-  value_selected:string;
-  record: boolean;
-  displayString = "La respuesta correcta es:";
 
-  constructor() {}
+  value_selected:string;
+  value_selected1:string;
+  value_selected2:string;
+
+  constructor(private toast : ToastController) {}
+  
   ngOnInit() {
   }
-  verificar(){
-    this.record === true ? this.value_selected = 'griff' : this.value_selected = 'biff';
-    if (this.record === false) {
+  async verificar(){  
+    if (this.value_selected === 'biff') {
       console.log("Hola")
     }else{
-      console.log(this.displayString+this.value_selected)
+      const toast = await this.toast.create({
+        message: 'tetlanilistli se ka akuali ka kaktikak',
+        duration: 5000
+      });
+      toast.present();
+    }
+
+    if (this.value_selected1 === 'buford') {
+      console.log("Hola")
+    }else{
+      const toast = await this.toast.create({
+        message: 'tetlanilistli ome ka akuali ka kaktikak',
+        duration: 4000
+      });
+      toast.present();
+    }
+    if (this.value_selected2 === 'griff') {
+      console.log("Hola")
+    }else{
+      const toast = await this.toast.create({
+        message: 'tetlanilistli yei ka akuali ka kaktikak',
+        duration: 3000
+      });
+      toast.present();
+    }
   }
-    
-  }
-  
 }
