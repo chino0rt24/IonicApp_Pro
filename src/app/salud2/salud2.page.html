@@ -1,12 +1,12 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Pakayelistli Aueyak tsala</ion-title>
+        <ion-title align="center">Pakayelistli Aueyak tsala</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-list>
         <ion-radio-group [(ngModel)]="value_selected3">
             <ion-list-header>
@@ -26,6 +26,9 @@
             <ion-item>
                 <ion-label>Fiebre</ion-label>
                 <ion-radio slot="start" value="fiebre"></ion-radio>
+            </ion-item>
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar1()">Verificar1</ion-button>
             </ion-item>
         </ion-radio-group>
     </ion-list>
@@ -49,6 +52,9 @@
                 <ion-label>Escurrimiento nasal</ion-label>
                 <ion-radio slot="start" value="nasal"></ion-radio>
             </ion-item>
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar2()">Verificar2</ion-button>
+            </ion-item>
         </ion-radio-group>
     </ion-list>
     <ion-list>
@@ -69,17 +75,12 @@
                 <ion-label>Estreñimiento</ion-label>
                 <ion-radio slot="start" value="estreñimiento"></ion-radio>
             </ion-item>
-            <ion-button color="success" shape="round" fill="outline" (click)="verificar()">Verificar</ion-button>
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar3()">Verificar3</ion-button>
+            </ion-item>
         </ion-radio-group>
     </ion-list>
+    <ion-list>
+        <ion-button slot="end" color="secondary" shape="round" [routerLink]="['/folder/folder.module']">Terminar Lesion</ion-button>
+    </ion-list>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/customers2">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/folder/folder.module">
-        <ion-icon slot="start" name="flag-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

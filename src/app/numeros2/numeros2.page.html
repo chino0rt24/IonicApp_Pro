@@ -1,13 +1,13 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Tlapoua Aueyak tsala</ion-title>
+        <ion-title align="center">Tlapoua Aueyak tsala</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-text color="dark">
         <h2 style="text-align: center">tlatlalia tlasempoualistli den matlaktli.</h2>
         <h6 style="text-align: center">ilnamikilistli tleinka matlaktli ipan matlaktli</h6>
@@ -97,15 +97,7 @@
             <ion-range step="10 " color="danger " [pin]="true "></ion-range>
         </ion-item>
     </ion-list>
+    <ion-list>
+        <ion-button slot="end" color="secondary" shape="round" [routerLink]="['/customers2']">Siguiente Lesion</ion-button>
+    </ion-list>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/home2">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-
-    <ion-button slot="end" href="/customers2">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

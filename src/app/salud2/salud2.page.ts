@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
@@ -8,18 +9,18 @@ import { ToastController } from '@ionic/angular';
 })
 export class Salud2Page implements OnInit {
 
-  value_selected3:string;
-  value_selected4:string;
-  value_selected5:string;
+  value_selected3: string;
+  value_selected4: string;
+  value_selected5: string;
 
-  constructor(private toast : ToastController) { }
+  constructor(private toast: ToastController) { }
 
   ngOnInit() {
   }
 
-  async verificar(){  
+  async verificar1(){
     if (this.value_selected3 === 'corazon') {
-      console.log("Hola")
+      console.log('Hola');
     }else{
       const toast = await this.toast.create({
         message: 'tetlanilistli se ka akuali ka kaktikak',
@@ -27,9 +28,11 @@ export class Salud2Page implements OnInit {
       });
       toast.present();
     }
+  }
 
+  async verificar2(){
     if (this.value_selected4 === 'contagiosa') {
-      console.log("Hola")
+      console.log('Hola');
     }else{
       const toast = await this.toast.create({
         message: 'tetlanilistli ome ka akuali ka kaktikak',
@@ -37,8 +40,11 @@ export class Salud2Page implements OnInit {
       });
       toast.present();
     }
+  }
+
+  async verificar3(){
     if (this.value_selected5 === 'estreñimiento') {
-      console.log("Hola")
+      console.log('Hola');
     }else{
       const toast = await this.toast.create({
         message: 'tetlanilistli yei ka akuali ka kaktikak',

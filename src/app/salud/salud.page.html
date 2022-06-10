@@ -1,12 +1,12 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Pakayelistli</ion-title>
+        <ion-title align="center">Pakayelistli</ion-title>
     </ion-toolbar>
 </ion-header>
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-img src="assets/img/salud.jpg"></ion-img>
     <ion-accordion-group>
         <ion-accordion value="enfer" toggle-icon="swap-vertical-outline">
@@ -74,14 +74,5 @@
             </ion-list>
         </ion-accordion>
     </ion-accordion-group>
+    <ion-button color="secondary" shape="round" [routerLink]="['/folder/folder.module']" expand="block">Terminar Lesion</ion-button>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/customers">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/folder/folder.module">
-        <ion-icon slot="start" name="flag-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

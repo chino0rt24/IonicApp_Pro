@@ -1,9 +1,6 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Tetlapaloa aueyak tsala</ion-title>
+        <ion-title align="center">Tetlapaloa aueyak tsala</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -11,7 +8,10 @@
     <ion-list>
         <ion-radio-group [(ngModel)]="value_selected">
             <ion-list-header>
-                <ion-label>Tlein neskayotia tamoxtla </ion-label>
+                <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+            </ion-list-header>
+            <ion-list-header>
+                <ion-label>1.- Tlein neskayotia tamoxtla </ion-label>
             </ion-list-header>
 
             <ion-item>
@@ -29,12 +29,16 @@
                 <ion-radio slot="start" value="buford"></ion-radio>
             </ion-item>
 
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar1()">Itta/Verificar 1</ion-button>
+            </ion-item>
+
         </ion-radio-group>
     </ion-list>
     <ion-list>
         <ion-radio-group [(ngModel)]="value_selected1">
             <ion-list-header>
-                <ion-label>Tlein neskayotia kenin motoka </ion-label>
+                <ion-label>2.- Tlein neskayotia kenin motoka </ion-label>
             </ion-list-header>
 
             <ion-item>
@@ -51,12 +55,15 @@
                 <ion-label>Mi nombre</ion-label>
                 <ion-radio slot="start" value="buford"></ion-radio>
             </ion-item>
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar2()">Itta/Verificar 2</ion-button>
+            </ion-item>
         </ion-radio-group>
     </ion-list>
     <ion-list>
         <ion-radio-group [(ngModel)]="value_selected2">
             <ion-list-header>
-                <ion-label>Tlein neskayotia kenin otimopanolti </ion-label>
+                <ion-label>3.- Tlein neskayotia kenin otimopanolti </ion-label>
             </ion-list-header>
 
             <ion-item>
@@ -73,17 +80,12 @@
                 <ion-label>HOY</ion-label>
                 <ion-radio slot="start" value="buford"></ion-radio>
             </ion-item>
-            <ion-button color="success" shape="round" fill="outline" (click)="verificar()">Verificar</ion-button>
+
+            <ion-item>
+                <ion-button color="success" shape="round" fill="outline" (click)="verificar3()">Itta/Verificar 3</ion-button>
+            </ion-item>
+
+            <ion-button slot="end" color="secondary" shape="round" [routerLink]="['/numeros2']">Siguiente Lesion</ion-button>
         </ion-radio-group>
     </ion-list>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/folder/folder.module">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/numeros2">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

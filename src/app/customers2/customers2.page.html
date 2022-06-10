@@ -1,65 +1,77 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Tlapali aueyak tsala</ion-title>
+        <ion-title align="center">Tlapali aueyak tsala</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <br>
     <ion-label class="user_Name">1.-¿kenin anoso Chichiltic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value"></ion-input>
+        <ion-button color="success" (click)="verificar1()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">2.-¿kenin anoso Xoxoctic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value1"></ion-input>
+        <ion-button color="success" (click)="verificar2()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">3.-¿kenin anoso Azultic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value2"></ion-input>
+        <ion-button color="success" (click)="verificar3()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">4.-¿kenin anoso Chipahuac kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value3"></ion-input>
+        <ion-button color="success" (click)="verificar4()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">5.-¿kenin anoso Yayahuic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value4"></ion-input>
+        <ion-button color="success" (click)="verificar5()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">6.-¿kenin anoso Achilcoz kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value5"></ion-input>
+        <ion-button color="success" (click)="verificar6()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
 
     <ion-label class="user_Name">7.-¿kenin anoso Tenextic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value6"></ion-input>
+        <ion-button color="success" (click)="verificar7()">
+            <ion-icon name="save"></ion-icon>
+        </ion-button>
     </ion-item>
     <br>
-    <ion-button color="success" shape="round" fill="outline" (click)="verificar()">Verificar</ion-button>
-
-
-    <ion-toolbar>
-        <ion-button slot="start" href="/numeros2">
-            <ion-icon slot="start" name="caret-back-outline">
-            </ion-icon>
-        </ion-button>
-        <ion-button slot="end" href="/salud2">
-            <ion-icon slot="start" name="caret-forward-outline">
-            </ion-icon>
-        </ion-button>
-    </ion-toolbar>
+    <ion-list>
+        <ion-button slot="end" color="secondary" shape="round" [routerLink]="['/salud2']">Siguiente Lesion</ion-button>
+    </ion-list>
+</ion-content>

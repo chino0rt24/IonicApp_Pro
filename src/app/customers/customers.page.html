@@ -1,13 +1,13 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Tlapali</ion-title>
+        <ion-title align="center">Tlapali</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-img src="assets/img/customers.jpg"></ion-img>
     <ion-accordion-group>
         <ion-accordion value="colors" toggle-icon="arrow-down-circle">
@@ -43,19 +43,8 @@
                     <ion-label>Tenextic-Gris</ion-label>
                     <ion-badge color="medium">R</ion-badge>
                 </ion-item>
-
             </ion-list>
         </ion-accordion>
     </ion-accordion-group>
+    <ion-button color="secondary" shape="round" [routerLink]="['/salud']" expand="block">Siguiente Lesion</ion-button>
 </ion-content>
-
-<ion-toolbar>
-    <ion-button slot="start" href="/numeros">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/salud">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

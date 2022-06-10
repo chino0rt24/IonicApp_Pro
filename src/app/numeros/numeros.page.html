@@ -1,14 +1,14 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>TLAPOUA</ion-title>
+        <ion-title align="center">TLAPOUA</ion-title>
     </ion-toolbar>
 
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-list>
         <ion-item>
             <ion-label>Se - Uno - 1</ion-label>
@@ -44,15 +44,5 @@
     <ion-fab vertical="bottom" horizontal="start" slot="fixed">
     </ion-fab>
     <ion-img src="assets/img/numeros.jpg"></ion-img>
-
+    <ion-button color="secondary" shape="round" [routerLink]="['/customers']" expand="block">Siguiente Lesion</ion-button>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/home">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/customers">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

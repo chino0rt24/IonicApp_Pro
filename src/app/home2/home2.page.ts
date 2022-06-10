@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 
@@ -11,28 +12,18 @@ import { ToastController } from '@ionic/angular';
 
 export class Home2Page implements OnInit {
 
+  value_selected: string;
+  value_selected1: string;
+  value_selected2: string;
 
-  value_selected:string;
-  value_selected1:string;
-  value_selected2:string;
+  constructor(private toast: ToastController) {}
 
-  constructor(private toast : ToastController) {}
-  
   ngOnInit() {
   }
-  async verificar(){  
-    if (this.value_selected === 'biff') {
-      console.log("Hola")
-    }else{
-      const toast = await this.toast.create({
-        message: 'tetlanilistli se ka akuali ka kaktikak',
-        duration: 5000
-      });
-      toast.present();
-    }
 
+  async verificar2(){
     if (this.value_selected1 === 'buford') {
-      console.log("Hola")
+      console.log('Hola');
     }else{
       const toast = await this.toast.create({
         message: 'tetlanilistli ome ka akuali ka kaktikak',
@@ -40,12 +31,26 @@ export class Home2Page implements OnInit {
       });
       toast.present();
     }
+  }
+
+  async verificar3(){
     if (this.value_selected2 === 'griff') {
-      console.log("Hola")
+      console.log('Hola');
     }else{
       const toast = await this.toast.create({
         message: 'tetlanilistli yei ka akuali ka kaktikak',
         duration: 3000
+      });
+      toast.present();
+    }
+  }
+  async verificar1(){
+    if (this.value_selected === 'biff') {
+      console.log('Hola');
+    }else{
+      const toast = await this.toast.create({
+        message: 'tetlanilistli se ka akuali ka kaktikak',
+        duration: 5000
       });
       toast.present();
     }

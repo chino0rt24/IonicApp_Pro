@@ -1,16 +1,15 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Tetlapaloa</ion-title>
+        <ion-title align="center">Tetlapaloa</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <ion-card>
         <ion-card-header>
-
             <ion-card-title>Tetlapaloa</ion-card-title>
         </ion-card-header>
         <ion-img src="assets/img/home.jpg"></ion-img>
@@ -117,14 +116,5 @@
             ¿Cómo te llamas?
         </ion-col>
     </ion-row>
+    <ion-button color="secondary" shape="round" [routerLink]="['/numeros']" expand="block">Siguiente Lesion</ion-button>
 </ion-content>
-<ion-toolbar>
-    <ion-button slot="start" href="/folder/folder.module">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/numeros">
-        <ion-icon slot="start" name="caret-forward-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>
