@@ -1,13 +1,13 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-buttons slot="start">
-            <ion-menu-button></ion-menu-button>
-        </ion-buttons>
-        <ion-title>Pakayelistli aueyak ouitl</ion-title>
+        <ion-title align="center">Pakayelistli Aueyak Ouitl</ion-title>
     </ion-toolbar>
 </ion-header>
 
 <ion-content>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
     <div class="ion-text-center">
         <h1>Isiukayotl kaxtilkopa</h1>
     </div>
@@ -46,16 +46,5 @@
             </ion-list>
         </ion-accordion>
     </ion-accordion-group>
+    <ion-button color="secondary" shape="round" expand="block" [routerLink]="['/folder/folder.module']">Terminar Lesion</ion-button>
 </ion-content>
-
-
-<ion-toolbar>
-    <ion-button slot="start" href="/customers3">
-        <ion-icon slot="start" name="caret-back-outline">
-        </ion-icon>
-    </ion-button>
-    <ion-button slot="end" href="/folder/folder.module">
-        <ion-icon slot="start" name="flag-outline">
-        </ion-icon>
-    </ion-button>
-</ion-toolbar>

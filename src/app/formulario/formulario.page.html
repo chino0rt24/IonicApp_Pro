@@ -1,43 +1,27 @@
-<ion-header color="mycolor">
-  <ion-toolbar >
-    <ion-title>Formulario</ion-title>
-  </ion-toolbar>
+<ion-header>
+    <ion-toolbar color="mycolor">
+        <ion-title align="center">Formulario</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="input-group mb-3">
-    <label class="input-group-text" for="inputGroupSelect01">Especialidad</label>
-    <select class="form-select" id="inputGroupSelect01">
-      <option selected>Dentista</option>
-      <option value="1">Medico</option>
-      <option value="2">Oculista</option>
-      <option value="3">Three</option>
-    </select>
-  </div>
-  
-  <div *ngFor="let item of data">
-    <ion-card>
-      <ion-card-header>
-        <ion-card-subtitle>Tipo: {{item.Tipo}}</ion-card-subtitle>
-        <ion-card-title>Especialidad: {{item.Especialidad}} <br>Edad: {{item.Edad}}
-        <br>Sexo: {{item.Sexo}} </ion-card-title>
+    <ion-list-header>
+        <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
+    </ion-list-header>
 
-      </ion-card-header>
-    
-      <ion-card-content>
-       Estas recoemdaciones son basadas desde estuidios Especialidados 
-      </ion-card-content>
-    </ion-card>
-  </div>
 
+    <div *ngFor="let item of data">
+        <ion-card>
+            <ion-card-header>
+                <ion-card-subtitle>Tipo: {{item.Tipo}}</ion-card-subtitle>
+                <ion-card-title>Especialidad: {{item.Especialidad}} <br>Edad: {{item.Edad}}
+                    <br>Sexo: {{item.Sexo}} </ion-card-title>
+
+            </ion-card-header>
+
+            <ion-card-content>
+                Estas recoemdaciones son basadas desde estuidios Especialidados
+            </ion-card-content>
+        </ion-card>
+    </div>
 </ion-content>
-<ion-toolbar>
-  <ion-button slot="start" href="/home2">
-      <ion-icon slot="start" name="caret-back-outline">
-      </ion-icon>
-  </ion-button>
-  <ion-button slot="end" href="/customers2">
-      <ion-icon slot="start" name="caret-forward-outline">
-      </ion-icon>
-  </ion-button>
-</ion-toolbar>

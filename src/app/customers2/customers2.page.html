@@ -1,6 +1,6 @@
 <ion-header>
     <ion-toolbar color="mycolor">
-        <ion-title align="center">Tlapali aueyak tsala</ion-title>
+        <ion-title align="center">Tlapali Aueyak Tsala</ion-title>
     </ion-toolbar>
 </ion-header>
 
@@ -9,7 +9,7 @@
         <ion-icon style="width: 30px;height:30px" name="close-outline" [routerLink]="['/folder/folder.page.html']"></ion-icon>
     </ion-list-header>
     <br>
-    <ion-label class="user_Name">1.-¿kenin anoso Chichiltic kaxtilkopa?</ion-label>
+    <ion-label class="user_Name">1.-¿Kenin anoso Chichiltic kaxtilkopa?</ion-label>
     <ion-item>
         <ion-input [(ngModel)]="value"></ion-input>
         <ion-button color="success" (click)="verificar1()">
@@ -72,6 +72,6 @@
     </ion-item>
     <br>
     <ion-list>
-        <ion-button slot="end" color="secondary" shape="round" [routerLink]="['/salud2']">Siguiente Lesion</ion-button>
+        <ion-button slot="end" color="secondary" shape="round" expand="block" [routerLink]="['/salud2']">Siguiente Lesion</ion-button>
     </ion-list>
 </ion-content>

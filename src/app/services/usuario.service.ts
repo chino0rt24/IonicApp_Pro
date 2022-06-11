@@ -6,7 +6,7 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class UsuarioService {
-  private urlAlgoritmo = "http://172.16.15.77:5000/recomendaciones";
+  private urlAlgoritmo = "https://b63e-189-240-194-242.ngrok.io/api/recomendaciones";
   private urlWeb = "http://192.168.100.2:5000/api/";
 
   constructor(private http: HttpClient){}
