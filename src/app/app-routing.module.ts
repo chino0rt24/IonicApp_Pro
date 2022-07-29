@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
- 
   {
     path: '',
     redirectTo: 'folder/Inbox',
@@ -67,7 +66,8 @@ const routes: Routes = [
   {
     path: 'salud',
     loadChildren: () => import('./salud/salud.module').then( m => m.SaludPageModule)
-  },  {
+  },
+  {
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },

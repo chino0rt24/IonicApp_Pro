@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 import { Component, OnInit } from '@angular/core';
 import { ToastController } from '@ionic/angular';
+import { BarraService } from '../services/barra.service';
 
 
 
@@ -16,7 +17,7 @@ export class Home2Page implements OnInit {
   value_selected1: string;
   value_selected2: string;
 
-  constructor(private toast: ToastController) {}
+  constructor(private toast: ToastController, private progreso2: BarraService) {}
 
   ngOnInit() {
   }
@@ -55,4 +56,24 @@ export class Home2Page implements OnInit {
       toast.present();
     }
   }
+verificar(){
+  if (this.value_selected === 'biff') {
+    if (this.value_selected2 === 'griff') {
+      if (this.value_selected1 === 'buford') {
+        if(this.progreso2.progrso2==0){
+          this.progreso2.upprogre2();
+          console.log(this.progreso2);
+        }else{
+          console.log('Te falta nivel');
+        }
+      }else{
+        console.log('Falta campo por llenar favor de verificarlo');
+      }
+    }else{
+      console.log('Falta campo por llenar favor de verificarlo');
+    }
+  }else{
+    console.log('Falta campo por llenar favor de verificarlo');
+  }
+}
 }
