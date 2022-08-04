@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 import { BarraService } from '../services/barra.service';
 
 @Component({
@@ -7,15 +8,25 @@ import { BarraService } from '../services/barra.service';
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage implements OnInit {
-  constructor(private progreso1: BarraService) {}
+  constructor(private toast: ToastController,private progreso1: BarraService) {}
   ngOnInit() {
   }
-  subirhome1(){
+  async subirhome1(){
     if(this.progreso1.progrso1==0){
       this.progreso1.upprogre1();
       console.log(this.progreso1);
+    }else if(this.progreso1.progrso1>0){
+      const toast = await this.toast.create({
+        message: 'Ya tienes el nivel completado',
+        duration: 1000
+      });
+      toast.present();
     }else{
-      console.log('Ya subio Nivel');
+      const toast = await this.toast.create({
+        message: 'Te falta nivel',
+        duration: 1000
+      });
+      toast.present();
     }
   }
 }
