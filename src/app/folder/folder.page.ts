@@ -12,6 +12,7 @@ export class FolderPage implements OnInit {
   valor1=(this.progreso.progrso1).toString();
   valor2=this.progreso.progrso2.toString();
   valor3=this.progreso.progrso3.toString();
+  
 
   constructor(private activatedRoute: ActivatedRoute, private progreso: BarraService) {
 
